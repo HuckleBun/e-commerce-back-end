@@ -1,31 +1,69 @@
-# e-commerce-back-end
+# Employee Tracker
+
+## License
+This application is under the cover of the MIT license.
+![badge](https://img.shields.io/badge/license-MIT-brightgreen)
+
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Demo](#demo)
+- [Usage](#usage)
+- [Contribution](#contribution)
+- [Connect](#connect)
 
 ## Description
-This back-end application is used to test the different GET, POST, PUT, and DELETE routes that are set up within the code.
-
-## Demos
-[Demo One](https://drive.google.com/file/d/1bjzgC1R0nzx0_Z3JXCj2ZN7dCRQiDMah/view?usp=sharing)
-<br/>
-[Demo Two](https://drive.google.com/file/d/1LOwA6rpZHpfeIhUfC3GPX9y3E8bKtanJ/view?usp=sharing)
+This is a back-end application that allows you to test GET, POST, PUT, and DELETE routes to add, remove, or modify Products, and Categories and Tags or said products. You can test is by using programs such as [**Insomnia**](https://insomnia.rest/)
 
 ## Installation
-Confirm you have mongoDB installed correctly. Clone this repository to your machine and open it in your IDE. In the terminal, run this command to confirm npm is installed:
+
+- Use the follow command at your terminal, **git clone** (Create a working copy at your local repository):
+
+```
+git clone git@github.com:hucklebun/employee-tracker.git
+```
+
+Once cloned, move into the directory of this project inside the terminal, then enter into your terminal:
 
 ```
 npm i
 ```
 
-Once it finishes, run this command to run the project:
+You will want to make sure you have mysql properly installed onto your machine. If installed, enter the following into your terminal:
+
+```
+mysql -u root -p
+```
+
+You will then be prompted for your mysql password. Once you are logged into mysql inside the terminal, enter the following commands:
+
+```
+source db/schema.sql;
+```
+```
+npm run seed
+```
+
+Once everything runs with no errors, you can quit out of mysql by entering **quit**.
+
+Once you have properly installed NPM and ran all the sql commands within the mysql terminal, enter this into your terminal:
 
 ```
 npm start
 ```
 
-Once running, you can use a program like [**Insomnia Core**](https://insomnia.rest/) to test the routes.
+This will run the program and you are all good to go!
+
+## Demo
+https://user-images.githubusercontent.com/62036600/141602377-9feebff7-c5c5-46f3-8999-a19aeb48436b.mp4
+
+## Usage
+GET, POST, PUT, and DELETE routes to edit back-end database
 
 ## Contribution
 Micah Duehring (hucklebun)
 
 ## Have questions? Connect with me.
-GitHub: github.com/hucklebun<br>
-Email: micah@theduehrings.com    
+GitHub: [hucklebun](https://github.com/hucklebun/)
+</br>
+Email: micah@theduehrings.com
